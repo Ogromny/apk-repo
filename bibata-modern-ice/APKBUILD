@@ -1,0 +1,30 @@
+# Contributor: Ogromny <ogromnycoding@gmail.com>
+# Maintainer: Ogromny <ogromnycoding@gmail.com>
+pkgname=bibata-modern-ice
+pkgver=2.0.3
+pkgrel=0
+pkgdesc="Open source, compact, and material designed cursor set."
+url="https://github.com/ful1e5/Bibata_Cursor"
+arch="noarch"
+license="GPL-3.0-only"
+depends=""
+makedepends=""
+checkdepends=""
+options="!check"
+install=""
+subpackages=""
+source="https://github.com/ful1e5/Bibata_Cursor/releases/download/v${pkgver}/Bibata-Modern-Ice.tar.gz"
+builddir="$srcdir/"
+
+build() {
+	return 0
+}
+
+package() {
+	mkdir -p "$pkgdir"/usr/share/icons
+	cp -r Bibata-Modern-Ice "$pkgdir"/usr/share/icons/
+}
+
+sha512sums="
+bb11cc73a15b26ad98818a70e22547fb1be0984e0f92250e1c5a8f42a537552a1193d53136d91290ca6fb2e52b6cee217c9c66551b7308195d2da8ee37dfe554  Bibata-Modern-Ice.tar.gz
+"
